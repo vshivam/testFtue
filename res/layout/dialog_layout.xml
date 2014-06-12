@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000" >
+
+    <View
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <View
+        android:id="@+id/leftBlob"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/topBar" />
+
+    <ImageView
+        android:id="@+id/transparentCover"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/topBar"
+        android:layout_toRightOf="@id/leftBlob"
+        android:src="@drawable/ic_launcher" />
+
+    <View
+        android:id="@+id/rightBlob"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/topBar"
+        android:layout_toRightOf="@id/transparentCover" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/rightBlob"
+        android:layout_toRightOf="@id/transparentCover"
+        android:src="@drawable/arrow_up_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrow"
+        android:layout_toRightOf="@id/arrow"
+        android:text="This is my control! \nYou can do blah"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
